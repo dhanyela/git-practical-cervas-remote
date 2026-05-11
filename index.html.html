@@ -12,7 +12,15 @@
 </body>
 <script>
     let paragraph = document.getElementById("parag1");
-    let button1 = document.querySelector("btn1");
-    let button2 = document.querySelector("btn2");
+    let button1 = document.querySelector("#btn1");
+    let button2 = document.querySelector("#btn2");
+
+    button1.addEventListener("click", function(){
+        alert("Button 1 triggered");
+    });
+
+    button2.addEventListener("dblclick", function(){
+        paragraph.style.color = "red";
+    });
 </script>
 </html>
